@@ -3,16 +3,19 @@ title: "How to play"
 layout: content
 ---
 
-Here's a somewhat informal overview of the game rules and how to play before they reveal the full instruction manual.  
-Special thanks to [potatolanes](https://twitter.com/potatolanes) for providing this guide!
-
-## What kind of game is it?
-
 Being based on Detective Conan, the TCG is thus about solving your very own mystery case!
 Its cards feature many iconic characters, cases, and plot points.
 Partnering up with your favorite Conan characters, gather evidence and aim to solve your case before your opponent does!
 
+## Game Victory Conditions
+
+Collect Evidence in order to solve the Case before your enemy.
+
 ## Card Types
+
+|Case|Partner|Character|Event|
+|---|---|---|---|
+| | | | |
 
 There are four card types:
 
@@ -24,9 +27,7 @@ There are four card types:
 As a rule of thumb, you play the game with one Partner card and one Case card, along with a 40-card deck of Character and Event cards. You can only have up to 3 copies of the same card.
 This is based on the ID of the card, so you can play 3 copies each of the above Conan cards since they have different IDs.
 
-## How to play the game
-
-### Board layout
+## Playing Area
 
 ![](img/board.jpg)
 
@@ -39,7 +40,7 @@ This is based on the ID of the card, so you can play 3 copies each of the above 
 * **Evidence Area:** Place Evidence here from your deck facedown. You get Evidence by making deductions or actions with your Partner or Character cards.
 * **Remove Area:** Where you place your Character or Event cards that are removed from game.
 
-### Starting a game
+## Game Setup
 
 ![](img/board2.jpg)
 
@@ -47,38 +48,48 @@ When you start a game, you place your Partner and Case cards onto the playing ar
 
 **Note:** If your deck happens to run out of cards in the middle of a game, you shuffle all the cards in the Remove Area into your deck. If you do so, the opponent gains one Evidence.
 
-## The Steps of the Game
+## Turn Flow
 
-### Auto Phase
+1. **Auto Phase** (do each of these in order)
+   1. Put your Partner card into Active mode. If it's in the File Area, put it back in the Partner zone.
+   2. Take your Characters that are in Sleep mode but put them into Active mode.
+   3. Draw a card from your deck and add it to your hand.
+   4. Take two cards from the top of your deck and put them into your File Area facedown. These act as your Files, which determine what level cards you are allowed to play. (Note: for the player going first, they only add one File instead of two on their first turn.)
+2. Main Phase (do any of these in any order)
+   1. **Play a card from your hand,** namely a Character card or an Event card. You can only play cards with a Level (top left corner number) that is lower than or equal to the amount of Files that you have. By default, you can only play one card per turn,
+   2. **Use a Next Hint.** Any time during the Main Phase, you can choose to use a Next Hint, in which you can add a File to your hand. After using a Next Hint, you can play another card from your hand, keeping in mind the newly decreased File count.
+   3. **Use a Character card's "Statement" effect.** Statement effects are effects that you can choose to activate during the Main Phase. Generally, these effects can only be used once per turn or have some sort of requirement to be used.
+   4. **Make a deduction.** Select a Partner or Character card and put it into Sleep mode (turn it sideways). If you do, gain Evidence by putting cards from the top of your deck facedown into the Evidence Area. The amount of Evidence you gain is based on the LP of the card used to deduce. (Note: A Character can't made a deduction the turn it is played)
+   5. **Take an action.** You can take an action with a Character card by sleeping it. Like deductions, a Character can't take action the turn it is played. When you take action, you can either target the opposing case, or an opposing Character that's in Sleep mode. The opponent can choose to guard the action by sleeping a Character they control.  
+     **Action (Case):**  If the opponent does not guard when you take action on their case, the opponent discards an Evidence and you gain an Evidence.  
+     **Contact:** When you take action on a Character, or when the opponent guards an action, a contact between the two Characters occurs. Compare the two Characters' AP, and remove the defending Character if the Character making the action has higher AP. Each player may choose to use one `[Cut-In]` ability from their hand to increase the AP of their Character.  
+   6. **Use your Partner's abilities.** A Partner card has two abilities: `[Assist]` and `[Case Closed]`.  
+      * **For Assist**, sleep the Partner card and put it into your File Area. This increases the number of cards in your File Area, thus increasing the Level threshold of what cards you can play. In addition, after using `[Assist]`, if the number of cards in your File Area are 7 or higher, the case changes from Case Phase to Resolution Phase. (Denote this status with a token or marker)  
+      * **For Case Closed**, activate only if the case is in Resolution Phase. By sleeping the Partner, if your Evidence count is greater than or equal to your Case Level, you win the game. Using this ability is the primary way in which you win the game.  
+     * Note that both abilities require you to Sleep the Partner, which means you can't use these abilities the same turn you deduce with the Partner, nor can you use both in one turn.
+4. End Phase
+   * Your turn ends, and the game is passed onto the opponent. Any effects that end or activate when your turn ends occur now.
 
-1. Put your Partner card into Active mode. If it's in the File Area, put it back in the Partner zone.
-2. Take your Characters that are in Sleep mode but put them into Active mode.
-3. Draw a card from your deck and add it to your hand.
-4. Take two cards from the top of your deck and put them into your File Area facedown. These act as your Files, which determine what level cards you are allowed to play. (Note: for the player going first, they only add one File instead of two on their first turn.)
-
-### Main Phase
-
-Do any of the following actions in any order:
-
-1. **Play a card from your hand,** namely a Character card or an Event card. You can only play cards with a Level (top left corner number) that is lower than or equal to the amount of Files that you have. By default, you can only play one card per turn,
-2. **Use a Next Hint.** Any time during the Main Phase, you can choose to use a Next Hint, in which you can add a File to your hand. After using a Next Hint, you can play another card from your hand, keeping in mind the newly decreased File count.
-3. **Use a Character card's "Statement" effect.** Statement effects are effects that you can choose to activate during the Main Phase. Generally, these effects can only be used once per turn or have some sort of requirement to be used.
-4. **Make a deduction.** Select a Partner or Character card and put it into Sleep mode (turn it sideways). If you do, gain Evidence by putting cards from the top of your deck facedown into the Evidence Area. The amount of Evidence you gain is based on the LP of the card used to deduce. (Note: A Character can't made a deduction the turn it is played)
-5. **Take an action.** You can take an action with a Character card by sleeping it. Like deductions, a Character can't take action the turn it is played. When you take action, you can either target the opposing case, or an opposing Character that's in Sleep mode. The opponent can choose to guard the action by sleeping a Character they control.  
-   **Action (Case):**  If the opponent does not guard when you take action on their case, the opponent discards an Evidence and you gain an Evidence.  
-   **Contact:** When you take action on a Character, or when the opponent guards an action, a contact between the two Characters occurs. Compare the two Characters' AP, and remove the defending Character if the Character making the action has higher AP. Each player may choose to use one `[Cut In]` ability from their hand to increase the AP of their Character.  
-6. **Use your Partner's abilities.** A Partner card has two abilities: `[Assist]` and `[Case Closed]`.  
-   **For Assist**, sleep the Partner card and put it into your File Area. This increases the number of cards in your File Area, thus increasing the Level threshold of what cards you can play. In addition, after using `[Assist]`, if the number of cards in your File Area are 7 or higher, the case changes from Case Phase to Resolution Phase. (Denote this status with a token or marker)  
-   **For Case Closed**, activate only if the case is in Resolution Phase. By sleeping the Partner, if your Evidence count is greater than or equal to your Case Level, you win the game. Using this ability is the primary way in which you win the game.  
-   Note that both abilities require you to Sleep the Partner, which means you can't use these abilities the same turn you deduce with the Partner, nor can you use both in one turn.
-
-### End Phase
-
-Your turn ends, and the game is passed onto the opponent. Any effects that end or activate when your turn ends occur now.
-
-### General flow of the game
+## General flow of the game
 
 1. Accumulate Files throughout the game, using them to play Character or Event cards.
 2. Make deductions with your Characters or Partner to gain Evidence. Take actions with your Characters to disrupt the opponent by removing their Evidence or Characters.
 3. When you reach seven Files, use your Partner's `[Assist]` to turn your case into Resolution Phase.
 4. Reach enough Evidence to match your Case Level, then use your Partner's `[Case Closed]` to win the game.
+
+## Keywords
+
+### Actions
+
+* **Deduction**: Put the card to Sleep and gain Evidence based on its LP
+* **Guard**: A Character on the Scene can be put to Sleep in order to defend against an Action.
+* **Cut-In**: You may use this during Contact by removing this card from your hand and boost your Character by the amount on the card.
+* **Investigation x**: Your opponent reveals the top x card(s) of their deck and places it at the bottom of their deck in any order.
+* **Mislead x**: You may put a character with this ability to Sleep when your opponent's card uses Deduction, in order to make that card lose x LP during this Deduction.
+* **Swift**: Characters with "Swift" ability can immediately perform Actions during the turn it is played.
+* **Bullet**: The opponent cannot Guard against Actions by characters with "Bullet" ability.
+
+### States
+
+* **Sleep**: Sleeping characters cannot perform Actions and they can be targeted for Contact.
+* **Stun**: When a character is stunned, it is turned upside down for the next turn. When it would be set to Active, it is put to Sleep instead (sideways).
