@@ -8,7 +8,7 @@ Use your very own deck to gather evidence towards your case, take action against
 
 ## Game Victory Conditions
 
-Gather a number of "Evidence" greater than or equal to the "Case Level", then use your Partner's  [Case Closed]  ability to win the game.
+Gather a number of "Evidence" greater than or equal to the "Case Level", then use your Partner's `[Case Closed]` ability to win the game.
 
 ## Card Types
 
@@ -19,12 +19,17 @@ Gather a number of "Evidence" greater than or equal to the "Case Level", then us
 There are four card types:
 
 * **Partner card:** Acts as your partner for the game. You can use it to deduce to gain evidence, and some cards have effects that require a specific color Partner to work. It also has the special `[Assist]` and `[Case Closed]` abilities, which are what you use to win the game.
-* **Case card:** Represents the case you are trying to solve. It denotes the Case Level, or the amount of evidence you need to win the game, which depends on whether you go first or second. Your deck can only have cards that are the same color as your case. Use a token to denote whether it is currently the Case Phase or Resolution Phase of your case.
+* **Case card:** Represents the case you are trying to solve. It denotes the Case Level, or the amount of evidence you need to win the game, which depends on whether you go first or second. Use a token to denote whether it is currently the Case Phase or Resolution Phase of your case.
 * **Character cards:** The main cards that go into your deck. They're the cards that you play onto your Scene (as in crime scene), and are what you mainly use to gain evidence.
 * **Event cards:** Support cards. They feature scenes from the manga, and are discarded once you use their effects.
   * Some Events have effects that set them to a character. After resolving that effect, set the Event underneath the Character card. Remove the Event, when the Character leaves the Scene.
 
 As a rule of thumb, you play the game with one Partner card and one Case card, along with a 40-card deck of Character and Event cards. You can only have up to 3 copies of the same card, based on the ID of the card.
+
+### Color restriction
+
+There is no color restriction on cards you can put in your deck. However a card can't be used from hand or through a Next Hint, if it's not the same color as your Case card. 
+This doesn't apply to cards that are played through card effects, or cards that are used through `<Cut In>` or `<Spark>`.
 
 ## Playing Area
 
@@ -60,13 +65,17 @@ When you start a game, you place your Partner and Case cards onto the playing ar
    1. **Play a card from your hand,** namely a Character card or an Event card. You can only play cards with a Level (top left corner number) that is lower than or equal to the amount of Files that you have. By default, you can only play one card per turn. This can not be done, if a Next Hint was already used that turn.
    2. **Use a Next Hint.** Any time during the Main Phase, you can choose to use a Next Hint, in which you can add a File to your hand. Then as part of Next Hint, you can play another card from your hand, keeping in mind the newly decreased File count. You can also choose to not play any cards, but you can't play a card after the Next Hint is over.
    3. **Use a Character card's "Declare" effect.** Declare effects are effects that you can choose to activate during the Main Phase. Generally, these effects can only be used once per turn or have some sort of requirement to be used.
-     * They can be used even on a Character that was played that turn.
-     * They can be used even if the Character is in Sleep Mode. (Unless [Sleep⤵] is part of the cost.)
+       * They can be used even on a Character that was played that turn.
+       * They can be used even if the Character is in Sleep Mode. (Unless [Sleep] is part of the cost.)
    4. **Make a Deduction.** Select a Partner or Character card and put it into Sleep mode (turn it sideways). If you do, gain Evidence by putting cards from the top of your deck facedown into the Evidence Area. The amount of Evidence you gain is based on the LP of the card used to deduce. Note: A Character can't made a deduction the turn it is played ("Intro Mode")
-   5. **Take an action.** You can take an action with a Character card by sleeping it. Like deductions, a Character can't take action the turn it is played. When you take action, you can either target the opposing case, or an opposing Character that's in Sleep mode. The opponent can choose to guard the action by sleeping a Character they control.  
-     **Action (Case):**  If the opponent does not guard when you take action on their case, the opponent discards an Evidence and you gain an Evidence. Note: The case must have 1 or more Evidence to target. 
-     **Contact:** When you take action on a Character in Sleep or Stun mode, or when the opponent guards an action, a contact between the two Characters occurs. Compare the two Characters' AP, and remove the defending Character if the Character making the action has higher AP. Each player may choose to use one `[Cut-In]` ability from their hand to increase the AP of their Character.  
-   6. **Use your Partner's abilities.** A Partner card has two abilities: `[Assist]` and `[Case Closed]`.  
+   5. **Take an action.** You can take an action with a Character card by sleeping it. Like deductions, a Character can't take action the turn it is played. When you take action, you can either target the opposing case, or an opposing Character that's in Sleep or Stun mode. The opponent can choose to guard the action by sleeping a Character they control.  
+       * **Action (Case):**  If the opponent does not guard when you take action on their case, the opponent discards an Evidence and you gain an Evidence.
+         * Note: The case must have 1 or more Evidence to target. 
+       * **Action (Character):** If the opponent does not guard when you take action on their character, **Contact** starts.
+         * The players can then use one card with `[Cut In]` from their hand to increase the AP of their Character. The player with the lower AP character (or the defending player if AP is equal) decides first, whether he wants to use a Cut In. Then, the other player decides.
+         * Compare the two Characters' AP, and remove the defending Character if the Character making the action has equal or higher AP. If the defending character has higher AP, nothing happens.
+         * Note: If a Character is removed in the middle of a Contact (e.g. by effects), the Contact ends.
+   7. **Use your Partner's abilities.** A Partner card has two abilities: `[Assist]` and `[Case Closed]`.  
       * **For Assist**, sleep the Partner card and put it into your File Area. This increases the number of cards in your File Area, thus increasing the Level threshold of what cards you can play. In addition, after using `[Assist]`, if the number of cards in your File Area are 7 or higher, the case changes from Case Phase to Resolution Phase. (Denote this status with a token or marker)  
       * **For Case Closed**, activate only if the case is in Resolution Phase. By sleeping the Partner, if your Evidence count is greater than or equal to your Case Level, you win the game. Using this ability is the primary way in which you win the game.  
      * Note that both abilities require you to Sleep the Partner, which means you can't use these abilities the same turn you deduce with the Partner, nor can you use both in one turn.
@@ -77,7 +86,7 @@ When you start a game, you place your Partner and Case cards onto the playing ar
 
 1. Accumulate Files throughout the game, using them to play Character or Event cards.
 2. Make deductions with your Characters or Partner to gain Evidence. Take actions with your Characters to disrupt the opponent by removing their Evidence or Characters.
-3. When you reach seven Files, use your Partner's `[Assist]` to turn your case into Resolution Phase.
+3. When you reach 7 Files (including the Partner card), use your Partner's `[Assist]` to turn your case into Resolution Phase.
 4. Reach enough Evidence to match your Case Level, then use your Partner's `[Case Closed]` to win the game.
 
 ## Keywords
