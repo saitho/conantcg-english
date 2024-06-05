@@ -14,12 +14,12 @@ Gather a number of "Evidence" greater than or equal to the "Case Level", then us
 
 |Case|Partner|Character|Event|
 |---|---|---|---|
-| | | | |
+| ![Case card](./card-case.jpg) | ![Partner card](./card-partner.jpg) | ![Character card](./card-character.jpg) | ![Event card](./card-event.jpg) |
 
 There are four card types:
 
-* **Partner card:** Acts as your partner for the game. You can use it to deduce to gain evidence, and some cards have effects that require a specific color Partner to work. It also has the special `[Assist]` and `[Case Closed]` abilities, which are what you use to win the game.
 * **Case card:** Represents the case you are trying to solve. It denotes the Case Level, or the amount of evidence you need to win the game, which depends on whether you go first or second. Use a token to denote whether it is currently the Case Phase or Resolution Phase of your case.
+* **Partner card:** Acts as your partner for the game. You can use it to deduce to gain evidence, and some cards have effects that require a specific color Partner to work. It also has the special `[Assist]` and `[Case Closed]` abilities, which are what you use to win the game.
 * **Character cards:** The main cards that go into your deck. They're the cards that you play onto your Scene (as in crime scene), and are what you mainly use to gain evidence.
 * **Event cards:** Support cards. They feature scenes from the manga, and are discarded once you use their effects.
   * Some Events have effects that set them to a character. After resolving that effect, set the Event underneath the Character card. Remove the Event, when the Character leaves the Scene.
