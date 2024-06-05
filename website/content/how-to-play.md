@@ -14,7 +14,7 @@ Gather a number of "Evidence" greater than or equal to the "Case Level", then us
 
 |Case|Partner|Character|Event|
 |---|---|---|---|
-| ![Case card](./card-case.jpg) | ![Partner card](./card-partner.jpg) | ![Character card](./card-character.jpg) | ![Event card](./card-event.jpg) |
+| ![Case card](img/card-case.jpg) | ![Partner card](img/card-partner.jpg) | ![Character card](img/card-character.jpg) | ![Event card](img/card-event.jpg) |
 
 There are four card types:
 
@@ -33,7 +33,7 @@ This doesn't apply to cards that are played through card effects, or cards that 
 
 ## Playing Area
 
-![](img/board.jpg)
+![Playing Area](img/board.jpg)
 
 * **Scene:** Where you play Character cards onto. You can only have up to 5 Characters on the Scene at a time. If you were to play another one, you can choose to discard a Character already on the Scene to play the new one.
 * **Partner:** Place your Partner card here at the start of a game.
@@ -48,7 +48,7 @@ This doesn't apply to cards that are played through card effects, or cards that 
 
 ## Game Setup
 
-![](img/board2.jpg)
+![Game Setup](img/board2.jpg)
 
 When you start a game, you place your Partner and Case cards onto the playing area, then shuffle your deck. Both players draw a starting hand of 5 cards, and are allowed to mulligan their hand by shuffling any cards from their hand into the deck and drawing the same number of cards.
 
