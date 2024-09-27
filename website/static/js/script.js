@@ -31,6 +31,7 @@ class Card extends HTMLElement {
         rarity: '',
         promoDetails: '',
         categories: [],
+        parallels: [],
         cost: 0,
         ap: 0,
         lp: 0,
@@ -55,6 +56,7 @@ class Card extends HTMLElement {
         this.data.color = this.getAttribute('color')
         this.data.rarity = this.getAttribute('rarity')
         this.data.categories = this.getAttribute('categories').split(',')
+        this.data.parallels = this.getAttribute('parallels').split(',')
         this.data.cost = this.getAttribute('cost')
         this.data.ap = this.getAttribute('ap')
         this.data.lp = this.getAttribute('lp')
@@ -207,12 +209,24 @@ class Card extends HTMLElement {
                 </div>`;
         }
 
+        let images = `
+        <figure>
+            <img src="${this.data.image}" alt="${this.data.title} (${this.data.cardNum})" class="rounded-xl" style="max-width: unset;" loading="lazy" />
+        </figure>`
+        for (const parallel of JSON.parse(this.data.parallels)) {
+            console.log(parallel)
+            images += `
+        <figure>
+            <img src="${parallel.image}" alt="${this.data.title} (${parallel.card_num})" class="rounded-xl" style="max-width: unset;" loading="lazy" />
+        </figure>`
+        }
+
         container.innerHTML += `<div data-popover id="card-${this.data.id}" role="tooltip"
      class="absolute z-10 invisible inline-block text-sm transition-opacity duration-300 border border-gray-200 rounded-lg shadow-lg opacity-0 dark:border-gray-600 bg-white dark:bg-warmgray-800 dark:text-white"
 >
     <div class="flex items-start">
         <div class="cardoverlay-image self-stretch">
-            <img src="${this.data.image}" alt="${this.data.title} (${this.data.cardNum})" class="rounded-xl" style="max-width: unset;" loading="lazy" />
+            ${images}
         </div>
         <!-- Add color here as well for mobile view -->
         <div class="dark:border-gray-600 bg-white dark:bg-warmgray-800 dark:text-white" style="min-width: 550px;max-width: 550px;">

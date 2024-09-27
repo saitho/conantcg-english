@@ -156,7 +156,7 @@
 
     <div class="card-list flex flex-wrap justify-start mt-4">
         {{ $counter := 0 }}
-        {{ range site.Data.cards_ja }}
+        {{ range site.Data.cards_ja_reduced }}
         {{ $card := . }}
         {{ $title := or (T (printf "cards.%s.title" .card_id )) .title }}
         {{ $type := or (T (printf "types.%s" .type )) .type }}
@@ -173,6 +173,16 @@
         {{ $categories := slice }}
         {{range .categories}}{{ $categories = $categories | append (or (T (printf "categories.%s" . )) .) }}{{end}}
 
+        {{ $parallels := slice }}
+        {{range $card.parallels}}
+            {{ $parallelCardNum := . }}
+            {{ with or (resources.Get (printf "cards/%s.ja.jpg" $parallelCardNum)) (resources.Get "img/fallback.jpg") }}
+                {{ with .Resize "250x" }}
+                    {{ $parallels = $parallels | append (dict "card_num" $parallelCardNum "image"  .RelPermalink) }}
+                {{ end }}
+            {{ end }}
+        {{end}}
+
         {{ with or (resources.Get (printf "cards/%s.ja.jpg" $card.card_num)) (resources.Get "img/fallback.jpg") }}
             {{ with .Resize "250x" }}
                 <dct-card
@@ -180,6 +190,7 @@
                         image="{{ .RelPermalink }}"
                         title="{{ $title }}"
                         original-title="{{ $card.title }}"
+                        parallels="{{ $parallels | jsonify }}"
                         card-id="{{ $card.card_id }}"
                         card-num="{{ $card.card_num }}"
                         promo-details="{{ $contain }}"
