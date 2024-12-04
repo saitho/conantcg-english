@@ -25,12 +25,36 @@ for (const file of jsonSourceFiles) {
         const additionalContent = JSON.parse(additionalBuffer.toString())
         fileContent = deepmerge(fileContent, additionalContent)
     }
+    if (file === 'cards_ja') {
+        // Merge Paralle cards with original entry
+        const fileContentReduced = {...fileContent}
+        for (const key in fileContentReduced) {
+            fileContentReduced[key].parallels = []
+            if (!key.startsWith('B')) {
+                continue;
+            }
+            let regularKey = ''
+            if (key.endsWith('P')) { // regular parallel
+                regularKey = key.replace(/P$/, '')
+            }
+            if (key.endsWith('Sec2')) { // regular parallel
+                regularKey = key.replace(/Sec2$/, 'Sec')
+            }
+            if (!regularKey) {
+                continue;
+            }
+            fileContentReduced[regularKey].parallels.push(key)
+            delete fileContentReduced[key]
+        }
+        const reducedTargetPath = path.join('data/', file + '_reduced.json')
+        fs.writeFileSync(reducedTargetPath, JSON.stringify(fileContentReduced))
+    }
     if (file === 'products_ja') {
         fileContent = Object.fromEntries(
             Object.entries(fileContent).sort(([k1], [k2]) => k1 < k2 ? -1 : 1),
         )
         // remove promo cards as they are searchable by filtering for PR
-        delete fileContent["products.プロモーションカード"]
+        delete fileContent["products.PRカード"]
     }
     fs.writeFileSync(targetPath, JSON.stringify(fileContent))
 }
