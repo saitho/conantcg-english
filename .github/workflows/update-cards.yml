@@ -1,0 +1,34 @@
+name: update card data
+
+on:
+  schedule:
+    - cron: "0 21 * * 6" # every saturday at 9pm
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Node.js dependencies
+        working-directory: crawler
+        run: |
+          bun i
+          bun run crawler.ts
+          git switch gha-update
+          git add data
+          git commit -m "chore: update data"
+          git push
+  createPullRequest:
+    name: Create Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create Pull Request
+        uses: vsoch/pull-request-action@1.1.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PULL_REQUEST_BRANCH: master
+          PULL_REQUEST_REVIEWERS: saitho
+          PULL_REQUEST_TITLE: "Automated card data update"
+          PULL_REQUEST_BODY: |
+            Auto-update card data
