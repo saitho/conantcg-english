@@ -22,12 +22,13 @@ jobs:
   createPullRequest:
     name: Create Pull Request
     runs-on: ubuntu-latest
+    needs: update
     steps:
       - uses: actions/checkout@v2
       - name: Create Pull Request
         uses: vsoch/pull-request-action@1.1.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_BRANCH: master
           PULL_REQUEST_REVIEWERS: saitho
           PULL_REQUEST_TITLE: "Automated card data update"
