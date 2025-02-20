@@ -17,6 +17,7 @@ jobs:
         run: |
           bun i
           bun run crawler.ts
+          cd ..
           git switch -C gha-update
           git add data
           git commit -m "chore: update data"
