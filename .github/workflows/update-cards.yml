@@ -12,12 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
-      - name: Install Node.js dependencies
+      - name: Install dependencies
         working-directory: crawler
+        run: bun i
+      - name: Run crawler
+        working-directory: crawler
+        run: bun run crawler.ts
+      - name: Push to Git
         run: |
-          bun i
-          bun run crawler.ts
-          cd ..
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
           git config push.autoSetupRemote
@@ -38,5 +40,5 @@ jobs:
           PULL_REQUEST_FROM_BRANCH: gha-update
           PULL_REQUEST_REVIEWERS: saitho
           PULL_REQUEST_TITLE: "Automated card data update"
-          PULL_REQUEST_BODY: |
-            Auto-update card data
+          PULL_REQUEST_BODY: Auto-update card data
+          PASS_IF_EXISTS: true
