@@ -18,6 +18,8 @@ jobs:
           bun i
           bun run crawler.ts
           cd ..
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
           git switch -C gha-update
           git add data
           git commit -m "chore: update data"
