@@ -10,6 +10,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Install Node.js dependencies
         working-directory: crawler
         run: |
@@ -24,7 +25,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: update
     steps:
-      - uses: actions/checkout@v2
       - name: Create Pull Request
         uses: vsoch/pull-request-action@1.1.1
         env:
