@@ -1,7 +1,7 @@
 [
     {
         "name": "Line-drawing 青山剛昌",
-        "cardNum": 23,
+        "cardNum": 25,
         "cards": [
             {
                 "card_num": "B01001Sec1",
@@ -92,6 +92,16 @@
                 "card_num": "B04002Sec2",
                 "title": "毛利蘭",
                 "package": "CT-P04 Case-Booster 04 信義の絆（パートナー）"
+            },
+            {
+                "card_num": "B05084",
+                "title": "大和敢助",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05085",
+                "title": "諸伏高明",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
             },
             {
                 "card_num": "D01001",
@@ -475,7 +485,7 @@
     },
     {
         "name": "五月とに",
-        "cardNum": 25,
+        "cardNum": 26,
         "cards": [
             {
                 "card_num": "B01035",
@@ -601,6 +611,11 @@
                 "card_num": "D06012",
                 "title": "怪盗キッド",
                 "package": "CT-D06 Case-ThemeDeck 01 服部平次VS怪盗キッド"
+            },
+            {
+                "card_num": "D09020",
+                "title": "黒田兵衛",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
             }
         ]
     },
@@ -1292,7 +1307,7 @@
     },
     {
         "name": "kawasima.",
-        "cardNum": 2,
+        "cardNum": 3,
         "cards": [
             {
                 "card_num": "B02022",
@@ -1303,6 +1318,11 @@
                 "card_num": "B02022P",
                 "title": "鬼丸猛",
                 "package": "CT-P02 Case-Booster 02 西と東の大決戦（コンタクト）"
+            },
+            {
+                "card_num": "B05066",
+                "title": "赤井秀一＆沖矢昴",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
             }
         ]
     },
@@ -1344,7 +1364,7 @@
     },
     {
         "name": "いの",
-        "cardNum": 10,
+        "cardNum": 11,
         "cards": [
             {
                 "card_num": "B02044",
@@ -1385,6 +1405,11 @@
                 "card_num": "B04031P",
                 "title": "中森青子",
                 "package": "CT-P04 Case-Booster 04 信義の絆（パートナー）"
+            },
+            {
+                "card_num": "B05027",
+                "title": "服部平次＆遠山和葉",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
             },
             {
                 "card_num": "D02002",
@@ -1432,18 +1457,23 @@
     },
     {
         "name": "木幡かいと、麻亜沙",
-        "cardNum": 1,
+        "cardNum": 2,
         "cards": [
             {
                 "card_num": "B03006",
                 "title": "結成 少年探偵団",
                 "package": "CT-P03 Case-Booster 03 黒影の襲来（カットイン）"
+            },
+            {
+                "card_num": "D08021",
+                "title": "結成 少年探偵団",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
             }
         ]
     },
     {
         "name": "松田硯",
-        "cardNum": 20,
+        "cardNum": 23,
         "cards": [
             {
                 "card_num": "B03012",
@@ -1489,6 +1519,21 @@
                 "card_num": "B04074P",
                 "title": "降谷零",
                 "package": "CT-P04 Case-Booster 04 信義の絆（パートナー）"
+            },
+            {
+                "card_num": "B05005",
+                "title": "江戸川コナン＆工藤新一",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05045",
+                "title": "怪盗キッド＆黒羽快斗",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05086",
+                "title": "安室透＆降谷零",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
             },
             {
                 "card_num": "D01002",
@@ -1626,7 +1671,7 @@
     },
     {
         "name": "ニジハヤシ",
-        "cardNum": 4,
+        "cardNum": 6,
         "cards": [
             {
                 "card_num": "B03036",
@@ -1647,12 +1692,22 @@
                 "card_num": "PR050",
                 "title": "ウォッカ",
                 "package": "PRカード"
+            },
+            {
+                "card_num": "PR103",
+                "title": "ウォッカ",
+                "package": "PRカード"
+            },
+            {
+                "card_num": "PR109",
+                "title": "ウォッカ",
+                "package": "PRカード"
             }
         ]
     },
     {
         "name": "株式会社Trys",
-        "cardNum": 16,
+        "cardNum": 36,
         "cards": [
             {
                 "card_num": "B03048",
@@ -1733,6 +1788,106 @@
                 "card_num": "B03088P",
                 "title": "松田陣平",
                 "package": "CT-P03 Case-Booster 03 黒影の襲来（カットイン）"
+            },
+            {
+                "card_num": "D08003",
+                "title": "江戸川コナン",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08004",
+                "title": "江戸川コナン",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08005",
+                "title": "灰原哀",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08006",
+                "title": "灰原哀",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08007",
+                "title": "吉田歩美",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08008",
+                "title": "吉田歩美",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08009",
+                "title": "小嶋元太",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08010",
+                "title": "小嶋元太",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08011",
+                "title": "円谷光彦",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D08012",
+                "title": "円谷光彦",
+                "package": "CT-D08 Case-ThemeDeck 03 青の古城探索事件"
+            },
+            {
+                "card_num": "D09004",
+                "title": "大和敢助",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09005",
+                "title": "大和敢助",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09006",
+                "title": "諸伏高明",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09007",
+                "title": "諸伏高明",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09008",
+                "title": "上原由衣",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09009",
+                "title": "上原由衣",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09010",
+                "title": "降谷零",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09011",
+                "title": "降谷零",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09012",
+                "title": "風見裕也",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
+            },
+            {
+                "card_num": "D09013",
+                "title": "風見裕也",
+                "package": "CT-D09 Case-ThemeDeck 04 死亡の館、赤い壁"
             }
         ]
     },
@@ -1853,7 +2008,7 @@
     },
     {
         "name": "犬",
-        "cardNum": 3,
+        "cardNum": 4,
         "cards": [
             {
                 "card_num": "B04089",
@@ -1869,6 +2024,37 @@
                 "card_num": "B04094",
                 "title": "ジン",
                 "package": "CT-P04 Case-Booster 04 信義の絆（パートナー）"
+            },
+            {
+                "card_num": "B05006",
+                "title": "毛利小五郎",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            }
+        ]
+    },
+    {
+        "name": "海老丸ベベ",
+        "cardNum": 4,
+        "cards": [
+            {
+                "card_num": "B05087",
+                "title": "諸伏高明",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05088",
+                "title": "大和敢助",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05089",
+                "title": "上原由衣",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
+            },
+            {
+                "card_num": "B05106",
+                "title": "ジン＆ウォッカ",
+                "package": "CT-P05 Case-Booster 05 新たなる謎"
             }
         ]
     },
@@ -1900,11 +2086,21 @@
     },
     {
         "name": "コウサク",
-        "cardNum": 1,
+        "cardNum": 3,
         "cards": [
             {
                 "card_num": "PR068",
                 "title": "世良真純",
+                "package": "PRカード"
+            },
+            {
+                "card_num": "PR102",
+                "title": "毛利蘭",
+                "package": "PRカード"
+            },
+            {
+                "card_num": "PR108",
+                "title": "毛利蘭",
                 "package": "PRカード"
             }
         ]
@@ -1921,6 +2117,17 @@
             {
                 "card_num": "PR088",
                 "title": "遠山和葉",
+                "package": "PRカード"
+            }
+        ]
+    },
+    {
+        "name": "029",
+        "cardNum": 1,
+        "cards": [
+            {
+                "card_num": "PR097",
+                "title": "灰原哀",
                 "package": "PRカード"
             }
         ]
