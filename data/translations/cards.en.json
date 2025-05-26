@@ -1531,7 +1531,7 @@
   "cards.0612.title": "Man the the Scar",
   "cards.0612.feature": "Opponent must choose this character if he/she can choose this character by the effect of the event.\n[During Your Turn][When Removed From Scene] Select up to one Black character of Level 4 or lower in Your Scene's Scene's Remove Area and put it into play in Sleep.",
   "cards.0613.title": "Knock-knock",
-  "cards.0613.feature": "Set this event to one Black character at Your Scene.\nThe character with this event set says, \"[Once per Turn] When this character leaves Your Scene, if there is no character at Your Scene, choose up to 1 character, remove it, and choose up to 2 level 6 or lower characters with [Cut In] in Your Scene's Remove Area and put it into play.\" with the following.",
+  "cards.0613.feature": "Set this event to one of your Black characters on the field.\nA character with this event set has the effect \"[During your opponent's turn] When this character leaves the field, if you have no characters on your field, choose up to one character, remove it, and choose up to two characters with [Cut-in] that are level 6 or lower from your Remove Area, and bring them into play.\"",
   "cards.0614.title": "Sanction of the Betrayal",
   "cards.0614.feature": "When this Case enters Resolution Phase, your opponent draws a card.\nChange your Black partner's Case Solving ability to the following abilities:\n[Resolution Phase][Evidence Destruction][Sleep] Remove evidence equal to the Case Level: Your opponent loses the game.",
   "cards.0615.title": "Brunt of the Betrayal",
